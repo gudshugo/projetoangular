@@ -1,2 +1,5 @@
-<ap-photo url="https://images-na.ssl-images-amazon.com/images/I/31bTFsC6b2L._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_PIStarRatingFIVE%2CBottomLeft%2C360%2C-6_SR600%2C315_SCLZZZZZZZ_.jpg" description="Maple Leaf"></ap-photo>
-<ap-photo url="https://seetorontonow.com.br/uploads/2018/01/cn-tower-dusk.jpg" description="Toronto"></ap-photo>
+<ap-photo 
+    *ngFor="let photo of photos" 
+    [url]="photo.url" 
+    [description]="photo.description">
+</ap-photo>
